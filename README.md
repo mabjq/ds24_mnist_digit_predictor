@@ -1,10 +1,10 @@
 # Handwritten Digit Recognition with MNIST
 
-This project develops a handwritten digit classifier using the MNIST dataset, optimized for real-world recognition. The notebook (`mnist.ipynb`) explores multiple models, with an augmented SVM achieving a test accuracy of 0.9879.
+This project develops a handwritten digit classifier using the MNIST dataset, optimized for real-world recognition. The notebook (`mnist.ipynb`) explores multiple models, with an augmented SVM achieving a test accuracy of 0.9878.
 
 ## Project Overview
 - **Goal:** Recognize digits from drawings, uploads, or camera inputs using a Streamlit app.
-- **Models:** Logistic Regression (0.9233), Random Forest (0.9713), SVM (0.9852), Ensemble (0.9782), Augmented SVM (0.9879).
+- **Models:** Logistic Regression (0.9233), Random Forest (0.9713), SVM (0.9852), Ensemble (0.9782), Augmented SVM (0.9878).
 - **Techniques:** Data augmentation to enhance robustness.
 
 ## Files
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 - Cloud Version: Live App URL (https://mnistdigitpredictor-d2m99z8cma94zjp48wppno.streamlit.app/)
 
 ## Why Augmentation?
-Augmentation simulated real-world variations (camera angles, handwriting styles), increasing training data and improving generalization from 0.9852 to 0.9879.
+Augmentation simulated real-world variations (camera angles, handwriting styles), increasing training data and improving generalization from 0.9852 to 0.9878.
 
 ## Future Work
 - Improve precision (currently ~74% on drawings).
