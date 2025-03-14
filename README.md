@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ## Usage
 - Run Locally: streamlit run app.py
-- Cloud Version: Live App URL (https://mnist-digit-predictor-fzisvr4bhxcal7anj44ksa.streamlit.app/)
+- Cloud Version: Live App URL (https://mnistdigitpredictor-d2m99z8cma94zjp48wppno.streamlit.app/)
 
 ## Why Augmentation?
 Augmentation simulated real-world variations (camera angles, handwriting styles), increasing training data and improving generalization from 0.9852 to 0.9879.
