@@ -18,6 +18,8 @@ This project develops a handwritten digit classifier using the MNIST dataset, op
 
 ## Installation
 
+**Note:** This project was developed and tested with Python 3.11. 
+
 pip install -r requirements.txt
 
 Dependencies: streamlit, numpy, scikit-learn, joblib, streamlit-drawable-canvas, pillow, opencv-python-headless, gdown.
