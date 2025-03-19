@@ -40,7 +40,7 @@ st.sidebar.title("About")
 st.sidebar.write("This app predicts handwritten digits using an SVM model trained on MNIST data.")
 st.sidebar.write("Precision: ~74% (based on 500 drawing attempts locally)")
 st.sidebar.write("Tips: Draw clearly, upload grayscale images. Camera snapshot works best with good lighting.")
-st.sidebar.write("Model Accuracy: 0.9879 on test set.")
+st.sidebar.write("Model Accuracy: 0.9878 on test set.")
 
 # Main title
 st.title("✏️ MNIST Digit Predictor (Cloud)")
