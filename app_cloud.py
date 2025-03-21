@@ -38,7 +38,7 @@ except Exception as e:
 # Sidebar with info
 st.sidebar.title("About")
 st.sidebar.write("This app predicts handwritten digits using an SVM model trained on MNIST data.")
-st.sidebar.write("Precision: ~74% (based on 500 drawing attempts locally)")
+st.sidebar.write("Accuracy: ~85% (based on 500 drawing attempts locally)")
 st.sidebar.write("Tips: Draw clearly, upload grayscale images. Camera snapshot works best with good lighting.")
 st.sidebar.write("Model Accuracy: 0.9878 on test set.")
 

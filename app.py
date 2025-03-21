@@ -22,7 +22,7 @@ model = load_model()
 # Sidebar with info
 st.sidebar.title("About")
 st.sidebar.write("This app predicts handwritten digits using an SVM model trained on MNIST data.")
-st.sidebar.write("Precision: ~74% (based on 500 drawing attempts)")
+st.sidebar.write("Accuracy: ~85% (based on 500 drawing attempts)")
 st.sidebar.write("Tips: Draw clearly, use good lighting for camera, upload grayscale images.")
 
 # Main title
