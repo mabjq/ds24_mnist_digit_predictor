@@ -22,7 +22,7 @@ model = load_model()
 # Sidebar with info
 st.sidebar.title("About")
 st.sidebar.write("This app predicts handwritten digits using an SVM model trained on MNIST data.")
-st.sidebar.write("Accuracy: ~74% (based on 500 drawing attempts)")
+st.sidebar.write("Precision: ~74% (based on 500 drawing attempts)")
 st.sidebar.write("Tips: Draw clearly, use good lighting for camera, upload grayscale images.")
 
 # Main title
@@ -35,6 +35,7 @@ tab1, tab2, tab3 = st.tabs(["Draw a Digit", "Upload an Image", "Camera Feed"])
 # Tab 1: Drawing Canvas
 with tab1:
     st.write("Draw a single digit (0-9) clearly. Use the canvas below.")
+    threshold_value = st.slider("Adjust Threshold", 0, 255, 50, key="canvas_threshold")
     canvas_result = st_canvas(
         fill_color="black",
         stroke_width=15,
@@ -50,10 +51,11 @@ with tab1:
         image = Image.fromarray(canvas_result.image_data).convert("L")
         image = np.array(image)
 
-        image_binary = cv2.resize(image, (28, 28), interpolation=cv2.INTER_AREA)
-        _, image_binary = cv2.threshold(image_binary, 50, 255, cv2.THRESH_BINARY)
+        # Interpolarisation
+        image_binary = cv2.resize(image, (28, 28), interpolation=cv2.INTER_CUBIC)
+        _, image_binary = cv2.threshold(image_binary, threshold_value, 255, cv2.THRESH_BINARY)
 
-        st.image(image_binary, caption="Processed Digit", use_container_width=True)
+        st.image(image_binary, caption="Processed Digit", width=280)
 
         image_array = image_binary / 255.0
         image_array = image_array.reshape(1, -1)
