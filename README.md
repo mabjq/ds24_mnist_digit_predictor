@@ -32,7 +32,7 @@ Dependencies: streamlit, numpy, scikit-learn, joblib, streamlit-drawable-canvas,
 Augmentation simulated real-world variations (camera angles, handwriting styles), increasing training data and improving generalization from 0.9852 to 0.9878.
 
 ## Future Work
-- Improve precision (currently ~74% on drawings).
+- Improve precision (currently ~85% on drawings).
 - Optimize app performance.
 
 
